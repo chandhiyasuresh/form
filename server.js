@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const twilio = require('twilio');
 const app = express();
 const port = 3000;
-
+require('dotenv').config();
 // Your Twilio credentials
 const accountSid = process.env.accountSid;  // Replace with your Account SID
 const authToken = process.env.authToken;    // Replace with your Auth Token
